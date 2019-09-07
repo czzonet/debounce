@@ -51,3 +51,4 @@ References
 --
 
 1. [闭包 - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
+2. [函数防抖与函数节流 - 前端 - 掘金](https://juejin.im/entry/5b2b3f6ee51d4558df36fb93)
