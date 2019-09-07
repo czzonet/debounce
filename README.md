@@ -5,6 +5,8 @@ Debounce || 函数防抖
 
 **原理；** 用闭包存储上一个计时器id，然后子函数先清除该id，再设置新id。
 
+**本质：** 闭包作用和简单的类一样，存储功能如同私有成员变量。
+
 具体实现在src/lib里。
 
 演示
@@ -33,7 +35,7 @@ const debounce = (fn: () => any, timeout: number) => {
 }
 ```
 
-生成防抖函数，传入处理逻辑
+生成防抖函数，配置处理逻辑和延时
 
 ```ts
 const debouncer = debounce(() => console.log('debounce'), 2000)
@@ -44,3 +46,8 @@ const debouncer = debounce(() => console.log('debounce'), 2000)
 ```ts
 debouncer()
 ```
+
+References
+--
+
+1. [闭包 - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
